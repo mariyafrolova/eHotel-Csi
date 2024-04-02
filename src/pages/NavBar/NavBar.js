@@ -1,6 +1,8 @@
 import React from 'react'
 import './navbar.css'
-import { RiHotelLine } from "react-icons/ri";;
+import { RiHotelLine } from "react-icons/ri";
+import { IoIosCloseCircle } from "react-icons/io";
+import { SlMenu } from "react-icons/sl";
 
 const NavBar = () => {
     return(
@@ -16,7 +18,7 @@ const NavBar = () => {
                 </div>
 
                 <div className='navBar'>
-                 <ul className='navlists flex'>
+                 <ul className='navLists flex'>
                     <li className='navItem'>
                     <a href='#' className='navLink'> Home </a>
                     </li>
@@ -27,11 +29,29 @@ const NavBar = () => {
                     <a href='#' className='navLink'> Reservations </a>
                     </li>
                     <li className='navItem'>
-                    <a href='#' className='navLink'> Login </a>
+                    <a href='#' className='navLink'> Contact </a>
                     </li>
-                 
-                 </ul>
+
+                    <div className='headerBtns flex'>
+                        <button className='btn loginBtn'>
+                            <a href='#'> Login </a>   
+                        </button>
+                        <button className='btn'>
+                            <a href='#'> Sign up </a>   
+                        </button>
+
+                    </div>
+
+                </ul>
+                <div className='closeNavbar'>
+                <IoIosCloseCircle className='icon'/>  
+                </div> 
+
                 </div>
+                <div className='toggleNavbar'>
+                <SlMenu className='icon'/>
+                </div>
+
             </div>
         </section>
         )
