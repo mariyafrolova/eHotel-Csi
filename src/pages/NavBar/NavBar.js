@@ -1,13 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './navbar.css'
 import { RiHotelLine } from "react-icons/ri";
 import { IoIosCloseCircle } from "react-icons/io";
 import { SlMenu } from "react-icons/sl";
 
 const NavBar = () => {
+    
+const [active, setActive] = useState('navBar')
+const showNavBar =()=>{
+    setActive('navBar activeNavbar')
+}
+
+const removeNavBar =()=>{
+    setActive('navBar ')
+}
+
     return(
         <section className='navBarSection'>
             <div className='header'>
+
                 <div className='logoDiv'>
                     <a href='a' className='logo'>
                        <h1 className='flex'> <RiHotelLine className='icon'/> 
@@ -17,8 +28,9 @@ const NavBar = () => {
                     </a>
                 </div>
 
-                <div className='navBar'>
+                <div className={active}>
                  <ul className='navLists flex'>
+
                     <li className='navItem'>
                     <a href='#' className='navLink'> Home </a>
                     </li>
@@ -43,12 +55,14 @@ const NavBar = () => {
                     </div>
 
                 </ul>
-                <div className='closeNavbar'>
+
+                
+                <div onClick={removeNavBar} className='closeNavbar'>
                 <IoIosCloseCircle className='icon'/>  
                 </div> 
 
                 </div>
-                <div className='toggleNavbar'>
+                <div onClick={showNavBar} className='toggleNavbar'>
                 <SlMenu className='icon'/>
                 </div>
 

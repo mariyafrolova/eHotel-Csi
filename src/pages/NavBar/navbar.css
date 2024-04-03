@@ -24,7 +24,7 @@
 
         .logoDiv{
             .logo{
-                color:var(--whiteColor);
+                color:white;
                 font-weight: 500;
                 cursor: pointer;
                 align-items: center;
@@ -39,7 +39,7 @@
                 padding: 1rem;
                 width: 100%;
                 top: 0;
-                left: 0;
+                left:-500%;
                 box-shadow: 0 2px 4px rgba(209, 209, 209,0.904);
                 transition: .5s ease;
                 z-index: 1000;
@@ -52,19 +52,69 @@
 
                     .navItem{
                         padding: 1rem 0;
-                        font-size: .9rem;
-                        font-weight: 600;
+                        
                         .navLink{
                             color: var(--textColor);
                             font-size: .9rem;
+                            font-weight: 600;
                             &:hover{
                             color:var(--PrimaryColor)
                         } 
                         }
                        
                     }
+                    .headerBtns{
+                        flex-direction: column;
+                        .btn{
+                            margin-top: 1rem;
+
+                        a{
+                            font-weight: 600;
+                            &:hover{
+                                color: var(--whiteColor);
+
+                           } 
+                        }    
+                        }
+                        .loginBtn{
+                            background: none;
+                            border: 1px solid var(--PrimaryColor);
+                            a{
+                                color: var(--PrimaryColor);
+                            }
+                            &:hover{
+                               background: var(--HoverColor); 
+                               a{
+                                color: var(--whiteColor);
+                               }
+                            }
+                        }
+                    }
                 }
+
+                .closeNavbar{
+                    position: absolute;
+                    top: 1rem;
+                    right: 1.5rem;
+                    color: var(--PrimaryColor);
+                    & :hover .icon{
+                        color: var(--HoverColor);
+                    }
                 }
+            }
+            
+            .activeNavbar{
+                left:0 ;
+            }
+        }
+        .toggleNavbar{
+            .icon{
+                font-size: 25px;
+                color: var(--whiteColor);
+                &:hover{
+                    color: var(--PrimaryColor) ;
+                }
+            }
         }
     }
   }
