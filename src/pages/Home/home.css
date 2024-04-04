@@ -61,7 +61,7 @@
             left: 40%;
             box-shadow: 0 2px 8px 4px rgba(178,178,178,0.45);
 
-            .locationDiv, .dateDiv, .priceDiv, .roomsDiv, .hotelDiv{
+            .locationDiv, .dateDiv, .priceDiv, .roomsDiv, .hotelDiv, .adultsDiv, .kidsDiv{
                 width: 100%;
 
                 label{
@@ -70,6 +70,7 @@
                     font-weight: 500;
                     font-size: 13px;
                     padding-bottom: .4rem;
+                    width: 50%;
                 }
             }
         }

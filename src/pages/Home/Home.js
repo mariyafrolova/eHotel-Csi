@@ -1,5 +1,7 @@
 import React from 'react'
 import './home.css'
+import 'react-date-picker/dist/DatePicker.css';
+import 'react-calendar/dist/Calendar.css';
 
 const Home = () => {
     return(
@@ -19,7 +21,7 @@ const Home = () => {
                 
                     <div className='locationDiv'>
                         <label htmlFor='location'>Location</label>
-                        <input type='text' placeholder='Location'/>
+                        <input type='text' placeholder='location'/>
                     </div>
 
                     <div className='dateDiv'>
@@ -29,22 +31,48 @@ const Home = () => {
 
                     <div className='priceDiv'>
                         <label htmlFor='price'> Price </label>
-                        <input type='text' placeholder='Price range'/>
+                        <select>
+                            <option value="select">Select</option>
+                            <option value="option1">100$ - 200$</option>
+                            <option value="option2">400$ - 800$</option>
+                            <option value="option3">1000$ - 1500$</option>
+                            <option value="option4">2000$ - 3000$</option>
+                        </select>
                     </div>
 
                     <div className='hotelDiv'>
                         <label htmlFor='hotel'>Hôtel</label>
-                        <input type='text' placeholder='Hôtel'/>
+                        <select>
+                            <option value="select">Select</option>
+                            <option value="hilton">Hilton</option>
+                            <option value="holidayInn">Holiday Inn</option>
+                            <option value="trivago">Trivago</option>
+                            <option value="comfortInn">Comfort Inn</option>
+                            <option value="mariott">Marriott</option>
+
+                        </select>
                     </div>
 
                     <div className='adultsDiv'>
                         <label htmlFor='number'>Adults</label>
-                        <input type='text' placeholder='Number of Adults'/>
+                        <select>
+                            <option value="un">1</option>
+                            <option value="deux">2</option>
+                            <option value="trois">3</option>
+                            <option value="quatre">4</option>
+                            <option value="cinq">5</option>
+                        </select>
                     </div>
 
                     <div className='kidsDiv'>
                         <label htmlFor='number'>Children</label>
-                        <input type='text' placeholder='Number of children'/>
+                        <select>
+                            <option value="un enfant">1</option>
+                            <option value="deux enfants">2</option>
+                            <option value="trois enfants">3</option>
+                            <option value="quatre enfants">4</option>
+                            <option value="cinq enfants">5</option>
+                        </select>
                     </div>
                     
                     <button className='btn'>
