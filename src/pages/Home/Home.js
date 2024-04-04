@@ -1,9 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './home.css'
+import DatePicker from 'react-date-picker';
 import 'react-date-picker/dist/DatePicker.css';
-import 'react-calendar/dist/Calendar.css';
+
 
 const Home = () => {
+
+    const[startDate, setStartDate] = useState();
+    const[endDate, setEndDate] = useState();
+
+    function onChangeDataHandler(value){
+        setStartDate(value[0]);
+        setEndDate(value[1]);
+    }
+
     return(
         <section className='home'>
             <div className='secContainer container'>
@@ -26,7 +36,13 @@ const Home = () => {
 
                     <div className='dateDiv'>
                         <label htmlFor='date'>Date</label>
-                        <input type='text' placeholder='Date'/>
+                        <DatePicker
+                            selectRange = {true}
+                            startDate ={startDate}
+                            endDate={endDate}
+                            onChange={onChangeDataHandler}
+                            dateFormat='dd MMM yyyy' />
+                        
                     </div>
 
                     <div className='priceDiv'>
