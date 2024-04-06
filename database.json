@@ -1,0 +1,9 @@
+{
+    "dev": {
+        "driver": "pg",
+        "user": "postgres",
+        "password": "PostgresNzu24",
+        "host": "localhost",
+        "database": "ehotel_database"
+    }
+}

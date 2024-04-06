@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+To Run the app folow the folowing steps:
+1. Open a terminal or command prompt.
+2. Navigate to the root directory of your project. This should be the directory containing the package.json file of your project.
+3. Run the following commands to install the missing packages:
+     - `npm install react-dom`
+     - `npm install react-date-picker`
+     - `npm install react-icons`
+     - `npm install web-vitals`
+4. create a .env file and replace with you postgres credatianls and create a database
+5. run `node server.js` on terminal to watch the database (will be modified to be able to run the front and beck-end of the app after everything is connected)
