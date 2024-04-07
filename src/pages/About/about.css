@@ -1,0 +1,41 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure the container clips the background image */
+}
+
+.background-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.background-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.content h2 {
+    color: var(--PrimaryColor);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content p {
+    color: var(--blackColor);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,28 @@
+.contact-container {
+    width: 980%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eab27e; /* Pale blue background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align the text */
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif, sans-serif;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .contact-item {
+    margin-bottom: 20px;
+  }
+  
+  .contact-item h2 {
+    color: #ffffff; /* Orange color */
+  }
+  
+  .contact-item p {
+    color: #007bff; /* Blue color */
+  }
+  

@@ -1,4 +1,3 @@
-/*Colors*/
 :root{
     --PrimaryColor: hsl(26, 93%, 50%);
     --HoverColor: hsl(26, 90%, 42%);
@@ -31,7 +30,7 @@
                 justify-content: center;
             }
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 770px) {
             .navBar{
                 background: var(--greyBg);
                 position: absolute;
@@ -67,6 +66,7 @@
                         flex-direction: column;
                         .btn{
                             margin-top: 1rem;
+                            
 
                         a{
                             font-weight: 600;
@@ -119,7 +119,7 @@
     }
   }
 
-  /*Media*/
+
   @media screen and (min-width: 769px) {
     .navBarSection{
     .toggleNavbar, .closeNavbar{
