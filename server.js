@@ -76,7 +76,7 @@ async function createTriggers() {
     }
 }
 
-// Modifier setupDatabase pour inclure les index et les triggers
+
 async function setupDatabase() {
     await createTables(); // Crée les tables
     await insertData(); // Insère les données
