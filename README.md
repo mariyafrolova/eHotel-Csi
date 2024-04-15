@@ -78,4 +78,5 @@ To Run the app folow the folowing steps:
      - `npm install react-icons`
      - `npm install web-vitals`
 4. create a .env file and replace with you postgres credatianls and create a database
-5. run `npm run dev` on terminal to watch the database (will be modified to be able to run the front and beck-end of the app after everything is connected)
+5. Create the database with the name "ehotel_database"
+6. run `npm run dev` on terminal to watch the database (will be modified to be able to run the front and beck-end of the app after everything is connected)
